@@ -1,0 +1,345 @@
+.nav {
+    flex-wrap: nowrap;
+}
+
+.navbar-brand span {
+    background-color: brown;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 2rem;
+    margin: 0px 5px;
+}
+
+.navbar-brand:hover>span {
+    background-color: white;
+    color: crimson;
+    border-radius: 1rem;
+    padding-left: 8px;
+    transform: scale(1.1);
+}
+
+.navbar-brand:hover {
+    background-color: brown;
+    color: white;
+    border-radius: 1rem;
+    padding-left: 8px;
+    transform: scale(1.1);
+}
+
+.navbar-brand span .collapse {
+    flex-wrap: nowrap;
+}
+
+.nav li a {
+    color: crimson;
+}
+
+.nav li a:hover {
+    color: white;
+    background-color: brown;
+    border-radius: 1rem;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-section h3,
+#welcome-section h1 {
+    letter-spacing: 20px;
+    font-weight: 1000;
+}
+
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .dynamic-txt {
+    margin-left: 5px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.dynamic-txt li {
+    list-style: none;
+    color: crimson;
+    font-size: 40px;
+    position: relative;
+    top: 0;
+    animation: slide 5s steps(3) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -150px;
+    }
+}
+
+.dynamic-txt li span {
+    position: relative;
+}
+
+.dynamic-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: #212529;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid crimson;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 35px 0 35px;
+    }
+}
+
+
+/*socials*/
+
+.home_social {
+    position: fixed;
+    bottom: 2rem;
+    left: 1rem;
+    display: grid;
+    row-gap: 1rem;
+    background: none;
+}
+
+#profile-link {
+    width: max-content;
+    color: crimson;
+    padding: 0.1rem;
+    border-radius: 2rem;
+    display: flex;
+    font-size: 1rem;
+}
+
+#profile-link:hover {
+    background-color: brown;
+    color: white;
+}
+
+.home_social::after {
+    content: '';
+    width: 32px;
+    height: 2px;
+    transform: rotate(90deg) translate(16px, 3px);
+}
+
+.home_scroll {
+    position: fixed;
+    color: crimson;
+    right: -1.5rem;
+    bottom: 4rem;
+    display: grid;
+    row-gap: 2.25rem;
+    justify-items: center;
+}
+
+.home_scroll-icon {
+    font-size: 1.25rem;
+}
+
+.home_scroll-name {
+    color: crimson;
+    transform: rotate(-90deg);
+}
+
+.project-image {
+    height: calc(100%-6.8rem);
+}
+
+
+/* Start About Area */
+
+.about-area .about-title h2>span {
+    display: block;
+    letter-spacing: 15px;
+    color: crimson;
+    font-weight: 1000;
+}
+
+.about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+    letter-spacing: 5px;
+}
+
+#hire-me {
+    background-color: crimson;
+    color: white;
+}
+
+#hire-me:hover {
+    background-color: white;
+    color: crimson;
+    transform: scale(1.1);
+}
+
+#hire-me a {
+    background-color: crimson;
+    color: white;
+}
+
+#hire-me a:hover {
+    background-color: white;
+    color: crimson;
+    transform: scale(1.1);
+}
+
+#cv-btn {
+    background-color: crimson;
+    color: white;
+}
+
+#cv-btn:hover {
+    background-color: white;
+    color: crimson;
+    transform: scale(1.1);
+}
+
+#cv-btn a {
+    background-color: crimson;
+    color: white;
+}
+
+#cv-btn a:hover {
+    background-color: white;
+    color: crimson;
+    transform: scale(1.1);
+}
+
+
+/* End About Area */
+
+
+/* Start Brand Area */
+
+.brand-area .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.brand-area .first-row .col-lg-4>.single-brand {
+    border: 2px solid crimson;
+    border-radius: 2rem;
+    text-align: center;
+    padding: .8rem .8rem;
+    background-color: white;
+    margin: .9rem 0;
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.brand-area .first-row .col-lg-4>.single-brand.brand-2 {
+    height: 115px;
+}
+
+.brand-area .first-row .col-lg-4>.single-brand:hover {
+    transform: scale(1.1);
+}
+
+.brand-area .first-row .col-lg-4>.single-brand:hover>img {
+    filter: brightness(.75);
+}
+
+.brand-area .experience-area span {
+    display: block;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.brand-area .experience-area .years-area {
+    background: url(images/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 5.5rem;
+    padding-top: 1rem;
+    /* position: relative; */
+}
+
+.brand-area .experience-area .years-area .years {
+    font-size: 100px;
+    color: crimson;
+    /* z-index: 2; */
+}
+
+.brand-area .experience-area .years-area h2>span {
+    font-size: larger;
+}
+
+#call-me {
+    color: crimson;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+
+/* End Brand Area */
+
+
+/* Services Area */
+
+.services-area .services-title h1 {
+    font-size: 35px;
+    color: crimson;
+    letter-spacing: 15px;
+    font-weight: 900;
+}
+
+.services-area .services {
+    padding: 2rem 0;
+    width: 20rem;
+    /* margin: 5rem .5rem; */
+    transition: box-shadow .7s ease;
+}
+
+.services-area .services:hover {
+    box-shadow: brown;
+    transform: scale(1.1);
+}
+
+
+/* End Services Area */
+
+
+/* Project Area */
+
+.project-title h1 {
+    color: crimson;
+    font-weight: 900;
+    letter-spacing: 15px;
+}
+
+.project-area .button-group button+button {
+    padding-left: 3rem;
+}
+
+.project-area .grid .our-project>.title h4 {
+    font: normal 700 25px/12px;
+    color: rgb(105, 37, 51);
+}
+
+.project-area .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 2px 10px #b1afaf);
+}
+
+
+/* End Project Area */
+
+.text h3 {
+    color: crimson;
+}
+
+.icon {
+    background-color: brown;
+    border-radius: 1rem;
+}
